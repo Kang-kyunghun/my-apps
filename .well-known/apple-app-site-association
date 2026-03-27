@@ -1,0 +1,10 @@
+{
+    "applinks": {
+      "details": [
+        {
+          "appIDs": ["WMSBU94LGS.com.kyunghun.trailo"],
+          "components": [{ "/": "*" }]
+        }
+      ]
+    }
+  }

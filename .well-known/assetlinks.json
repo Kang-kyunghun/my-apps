@@ -1,0 +1,10 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.kyunghun.trailo",
+      "sha256_cert_fingerprints": [
+        "D4:76:96:90:08:B6:EE:EB:EA:88:F0:DD:2A:18:7C:3E:D0:1E:00:7A:BE:D6:9B:01:E4:65:6D:03:31:D5:83:EE"
+      ]
+    }
+  }]
