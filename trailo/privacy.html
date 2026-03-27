@@ -1,77 +1,198 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <meta charset='utf-8'>
-      <meta name='viewport' content='width=device-width'>
-      <title>Privacy Policy</title>
-      <style> body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; } </style>
-   </head>
-   <body>
-      <strong>Privacy Policy</strong>
-      <p>This privacy policy applies to the Trailo app (hereby referred to as "Application") for mobile devices that was created by Kang, Kyunghun (hereby referred to as "Service Provider") as an Ad Supported service. This service is intended for use "AS IS".</p>
-      <br><strong>Information Collection and Use</strong>
-      <p>The Application collects information when you download and use it. This information may include information such as </p>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy – Trailo</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        line-height: 1.7;
+        color: #222;
+        background: #fff;
+        padding: 1.5em 1em;
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      h1 { font-size: 1.5em; margin-bottom: 0.25em; }
+      h2 { font-size: 1.1em; margin: 1.5em 0 0.4em; }
+      p, ul { margin-bottom: 0.8em; }
+      ul { padding-left: 1.4em; }
+      li { margin-bottom: 0.3em; }
+      a { color: #0066cc; }
+      .meta { color: #777; font-size: 0.9em; margin-bottom: 1.5em; }
+      hr { border: none; border-top: 1px solid #ddd; margin: 2em 0; }
+      .footer { color: #999; font-size: 0.85em; }
+
+      /* Language toggle */
+      .lang-toggle {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 1.5em;
+      }
+      .lang-btn {
+        padding: 6px 18px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        background: #f5f5f5;
+        cursor: pointer;
+        font-size: 0.9em;
+        font-family: inherit;
+      }
+      .lang-btn.active {
+        background: #222;
+        color: #fff;
+        border-color: #222;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('en')" id="btn-en">EN</button>
+      <button class="lang-btn" onclick="setLang('ko')" id="btn-ko">한국어</button>
+    </div>
+
+    <!-- ============================
+         ENGLISH
+    ============================= -->
+    <div id="content-en">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: 2026-03-27</p>
+
+      <p>This privacy policy applies to the <strong>Trailo</strong> app (hereby referred to as "Application") for mobile devices, created by Kang, Kyunghun (hereby referred to as "Service Provider") as an Ad Supported service. This service is provided "AS IS".</p>
+
+      <h2>Information Collection and Use</h2>
+      <p>The Application may collect the following information when you use it:</p>
       <ul>
-         <li>Your device's Internet Protocol address (e.g. IP address)</li>
-         <li>The pages of the Application that you visit, the time and date of your visit, the time spent on those pages</li>
-         <li>The time spent on the Application</li>
-         <li>The operating system you use on your mobile device</li>
+        <li>Your device's Internet Protocol address (e.g. IP address) — collected by third-party ad services</li>
+        <li>The time spent on the Application</li>
+        <li>The operating system you use on your mobile device</li>
       </ul>
-      <p></p>
-      <br><!---->
-      <div>
-         <p>The Application collects your device's location, which helps the Service Provider determine your approximate geographical location and make use of in below ways:</p>
-         <ul>
-            <li>Geolocation Services: The Service Provider utilizes location data to provide features such as personalized content, relevant recommendations, and location-based services.</li>
-            <li>Analytics and Improvements: Aggregated and anonymized location data helps the Service Provider to analyze user behavior, identify trends, and improve the overall performance and functionality of the Application.</li>
-            <li>Third-Party Services: Periodically, the Service Provider may transmit anonymized location data to external services. These services assist them in enhancing the Application and optimizing their offerings.</li>
-         </ul>
-      </div>
-      <br>
-      <p>The Application does not use Artificial Intelligence (AI) technologies to process your data or provide features.</p>
-      <br>
-      <p>The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions.</p>
-      <br>
-      <p>For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including but not limited to Precise Location, Background Location, Photos (Metadata), Device ID, IP Address. The information that the Service Provider request will be retained by them and used as described in this privacy policy.</p>
-      <br><strong>Third Party Access</strong>
-      <p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.</p>
-      <div>
-         <br>
-         <p>Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:</p>
-         <ul>
-            <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">AdMob</a></li>
-            <li><a href="https://expo.io/privacy" target="_blank" rel="noopener noreferrer">Expo</a></li>
-         </ul>
-      </div>
-      <br>
-      <p>The Service Provider may disclose User Provided and Automatically Collected Information:</p>
+
+      <h2>Location Data</h2>
+      <p>The Application collects precise and background location data to provide its core travel-tracking features. This data is used solely to record your travel routes and is <strong>stored only on your device</strong>. Location data is never transmitted to the Service Provider's servers or any external service by the Application itself.</p>
+
+      <h2>Photos</h2>
+      <p>The Application accesses your photo library to automatically associate photos with your travel records based on timestamp and location metadata. Photo data is processed and stored locally on your device only.</p>
+
+      <h2>Third-Party Services</h2>
+      <p>The Application uses the following third-party services that may collect data independently. Please review their privacy policies:</p>
       <ul>
-         <li>as required by law, such as to comply with a subpoena, or similar legal process;</li>
-         <li>when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li>
-         <li>with their trusted services providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
+        <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">Google AdMob</a></li>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Maps</a></li>
+        <li><a href="https://expo.io/privacy" target="_blank" rel="noopener noreferrer">Expo</a></li>
       </ul>
-      <p></p>
-      <br><strong>Opt-Out Rights</strong>
-      <p>You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.</p>
-      <br><strong>Data Retention Policy</strong>
-      <p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at korea271150@gmail.com and they will respond in a reasonable time.</p>
-      <br><strong>Children</strong>
-      <p>The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13.</p>
-      <div>
-         <br>
-         <p>The Application does not address anyone under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. In the case the Service Provider discover that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider (korea271150@gmail.com) so that they will be able to take the necessary actions.</p>
-      </div>
-      <br><strong>Security</strong>
-      <p>The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.</p>
-      <br><strong>Changes</strong>
-      <p>This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.</p>
-      <br>
-      <p>This privacy policy is effective as of 2026-03-27</p>
-      <br><strong>Your Consent</strong>
-      <p>By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us.</p>
-      <br><strong>Contact Us</strong>
-      <p>If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at korea271150@gmail.com.</p>
-      <hr>
-      <p>This privacy policy page was generated by <a href="https://app-privacy-policy-generator.nisrulz.com/" target="_blank" rel="noopener noreferrer">App Privacy Policy Generator</a></p>
-   </body>
+      <p>Only aggregated, anonymized data may be transmitted to ad services (AdMob) to display relevant advertisements. The Service Provider does not sell or share your personal data with other third parties.</p>
+
+      <h2>Data Retention Policy</h2>
+      <p>All travel and location data created within the Application is stored locally on your device and is not accessible by the Service Provider. If you wish to delete your data, you may do so by uninstalling the Application or using the in-app deletion features. For any additional requests, please contact us at <a href="mailto:korea271150@gmail.com">korea271150@gmail.com</a>.</p>
+
+      <h2>Opt-Out Rights</h2>
+      <p>You can stop all collection of information by the Application by uninstalling it using the standard uninstall process available on your mobile device or via the app marketplace.</p>
+
+      <h2>Children</h2>
+      <p>The Application is not directed at children under the age of 13. The Service Provider does not knowingly collect personal information from children under 13. If you believe a child has provided personal information, please contact us at <a href="mailto:korea271150@gmail.com">korea271150@gmail.com</a> and we will promptly delete it.</p>
+
+      <h2>Security</h2>
+      <p>The Service Provider is committed to protecting your information. Since all personal travel data is stored locally on your device, the security of that data depends on your device's own security measures. The Service Provider recommends using a device passcode and keeping your operating system up to date.</p>
+
+      <h2>GDPR – Rights of EU Users</h2>
+      <p>If you are located in the European Economic Area (EEA), you have the following rights under the General Data Protection Regulation (GDPR):</p>
+      <ul>
+        <li><strong>Right of access:</strong> You may request a copy of any personal data we hold about you.</li>
+        <li><strong>Right to erasure:</strong> You may request that we delete your personal data.</li>
+        <li><strong>Right to data portability:</strong> You may request your data in a structured, machine-readable format.</li>
+        <li><strong>Right to object:</strong> You may object to the processing of your personal data at any time.</li>
+      </ul>
+      <p>As the Application stores all travel and location data locally on your device, most of your personal data is entirely under your own control. For data held by third-party services (e.g. AdMob), please refer to their respective privacy policies.</p>
+      <p>The legal basis for processing location data is your explicit consent given when granting location permissions. To exercise any of your GDPR rights, please contact us at <a href="mailto:korea271150@gmail.com">korea271150@gmail.com</a>.</p>
+
+      <h2>Changes to This Privacy Policy</h2>
+      <p>This Privacy Policy may be updated from time to time. The Service Provider will notify you of any changes by updating this page. Continued use of the Application after changes are posted constitutes your acceptance of the updated policy.</p>
+
+      <h2>Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:korea271150@gmail.com">korea271150@gmail.com</a>.</p>
+
+      <hr />
+      <p class="footer">This privacy policy was last updated on 2026-03-27.</p>
+    </div>
+
+    <!-- ============================
+         KOREAN
+    ============================= -->
+    <div id="content-ko" style="display:none;">
+      <h1>개인정보처리방침</h1>
+      <p class="meta">시행일: 2026년 3월 27일</p>
+
+      <p>본 개인정보처리방침은 강경훈(이하 "서비스 제공자")이 광고 지원 서비스로 제작한 모바일 앱 <strong>Trailo</strong>(이하 "앱")에 적용됩니다. 본 서비스는 "있는 그대로(AS IS)" 제공됩니다.</p>
+
+      <h2>수집하는 정보</h2>
+      <p>앱은 이용 과정에서 다음과 같은 정보를 수집할 수 있습니다:</p>
+      <ul>
+        <li>기기의 IP 주소 — 서드파티 광고 서비스에 의해 수집됨</li>
+        <li>앱 이용 시간</li>
+        <li>모바일 기기의 운영체제 정보</li>
+      </ul>
+
+      <h2>위치 데이터</h2>
+      <p>앱은 여행 경로 기록이라는 핵심 기능을 제공하기 위해 정밀 위치 및 백그라운드 위치 데이터를 수집합니다. 이 데이터는 오직 여행 경로 기록 목적으로만 사용되며, <strong>사용자의 기기에만 저장</strong>됩니다. 위치 데이터는 서비스 제공자의 서버나 외부 서비스로 전송되지 않습니다.</p>
+
+      <h2>사진</h2>
+      <p>앱은 사진의 촬영 시각 및 위치 메타데이터를 기반으로 사진을 여행 기록과 자동 연결하기 위해 사진 라이브러리에 접근합니다. 사진 데이터는 기기 내에서만 처리 및 저장됩니다.</p>
+
+      <h2>서드파티 서비스</h2>
+      <p>앱은 아래의 서드파티 서비스를 사용하며, 각 서비스는 독립적으로 데이터를 수집할 수 있습니다. 각 서비스의 개인정보처리방침을 확인해 주세요:</p>
+      <ul>
+        <li><a href="https://support.google.com/admob/answer/6128543?hl=ko" target="_blank" rel="noopener noreferrer">Google AdMob</a></li>
+        <li><a href="https://policies.google.com/privacy?hl=ko" target="_blank" rel="noopener noreferrer">Google Maps</a></li>
+        <li><a href="https://expo.io/privacy" target="_blank" rel="noopener noreferrer">Expo</a></li>
+      </ul>
+      <p>광고 서비스(AdMob)에는 관련 광고 표시를 위한 익명화된 집계 데이터만 전송될 수 있습니다. 서비스 제공자는 사용자의 개인정보를 다른 서드파티에 판매하거나 공유하지 않습니다.</p>
+
+      <h2>데이터 보관</h2>
+      <p>앱에서 생성된 모든 여행 및 위치 데이터는 사용자의 기기에 로컬로 저장되며 서비스 제공자는 이에 접근할 수 없습니다. 데이터를 삭제하려면 앱을 제거하거나 앱 내 삭제 기능을 사용하시기 바랍니다. 추가적인 요청은 <a href="mailto:korea271150@gmail.com">korea271150@gmail.com</a>으로 문의해 주세요.</p>
+
+      <h2>수집 거부 권리</h2>
+      <p>기기 또는 앱 마켓플레이스의 표준 제거 절차를 통해 앱을 삭제하면 모든 정보 수집을 중단할 수 있습니다.</p>
+
+      <h2>아동 보호</h2>
+      <p>본 앱은 만 13세 미만 아동을 대상으로 하지 않습니다. 서비스 제공자는 만 13세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다. 아동이 개인정보를 제공했다고 판단되면 <a href="mailto:korea271150@gmail.com">korea271150@gmail.com</a>으로 연락해 주시면 즉시 삭제 조치하겠습니다.</p>
+
+      <h2>보안</h2>
+      <p>서비스 제공자는 사용자 정보 보호를 위해 노력합니다. 모든 여행 데이터는 기기 내에 저장되므로, 해당 데이터의 보안은 기기 자체의 보안 설정에 의존합니다. 기기 잠금 설정 및 운영체제 최신화를 권장합니다.</p>
+
+      <h2>GDPR – EU 이용자 권리</h2>
+      <p>유럽 경제 지역(EEA)에 거주하는 이용자는 일반 개인정보보호법(GDPR)에 따라 다음의 권리를 가집니다:</p>
+      <ul>
+        <li><strong>열람권:</strong> 서비스 제공자가 보유한 개인정보의 사본을 요청할 수 있습니다.</li>
+        <li><strong>삭제권(잊힐 권리):</strong> 개인정보 삭제를 요청할 수 있습니다.</li>
+        <li><strong>이동권:</strong> 구조화된 기계 판독 가능 형식으로 데이터를 요청할 수 있습니다.</li>
+        <li><strong>이의 제기권:</strong> 언제든지 개인정보 처리에 이의를 제기할 수 있습니다.</li>
+      </ul>
+      <p>앱은 모든 여행 및 위치 데이터를 기기 내에 저장하므로, 대부분의 개인정보는 사용자가 직접 통제할 수 있습니다. 서드파티 서비스(예: AdMob)가 보유한 데이터에 대해서는 각 서비스의 개인정보처리방침을 참고하시기 바랍니다.</p>
+      <p>위치 데이터 처리의 법적 근거는 위치 권한 부여 시 제공된 명시적 동의입니다. GDPR 관련 권리 행사를 원하시면 <a href="mailto:korea271150@gmail.com">korea271150@gmail.com</a>으로 문의해 주세요.</p>
+
+      <h2>개인정보처리방침 변경</h2>
+      <p>본 개인정보처리방침은 수시로 업데이트될 수 있습니다. 변경 시 이 페이지를 통해 고지하며, 변경 후 앱을 계속 사용하면 업데이트된 방침에 동의한 것으로 간주합니다.</p>
+
+      <h2>문의</h2>
+      <p>개인정보처리방침에 관한 문의사항은 <a href="mailto:korea271150@gmail.com">korea271150@gmail.com</a>으로 연락해 주세요.</p>
+
+      <hr />
+      <p class="footer">본 개인정보처리방침은 2026년 3월 27일 최종 업데이트되었습니다.</p>
+    </div>
+
+    <script>
+      function setLang(lang) {
+        document.getElementById('content-en').style.display = lang === 'en' ? '' : 'none';
+        document.getElementById('content-ko').style.display = lang === 'ko' ? '' : 'none';
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
+      }
+    </script>
+
+  </body>
 </html>
